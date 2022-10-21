@@ -7,3 +7,11 @@ error: unable to forward port because pod is not running. Current status=Pending
 hungtran@Hungs-MacBook-Pro project-ml-microservice-kubernetes % kubectl port-forward pod/project-ml --address 0.0.0.0 8000:80
 Forwarding from 0.0.0.0:8000 -> 80
 Handling connection for 8000
+
+Hungs-MBP:project-ml-microservice-kubernetes hungtran$ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
