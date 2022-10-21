@@ -1,1 +1,9 @@
-<paste log output from Kubernetes-mediated prediction, here>
+hungtran@Hungs-MacBook-Pro project-ml-microservice-kubernetes % ./run_kubernetes.sh              
+pod/project-ml created
+NAME         READY   STATUS              RESTARTS   AGE
+project-ml   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+
+hungtran@Hungs-MacBook-Pro project-ml-microservice-kubernetes % kubectl port-forward pod/project-ml --address 0.0.0.0 8000:80
+Forwarding from 0.0.0.0:8000 -> 80
+Handling connection for 8000
